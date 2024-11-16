@@ -1,0 +1,114 @@
+.creations {
+  width: 100vw;
+  padding: 0 10vw 8vw 10vw;
+}
+
+.title-creations {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.title-creations > h3 {
+  font-size: 3rem;
+  font-family: "Josefin Sans", serif;
+  font-weight: 300;
+}
+
+.link-all {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: "Alata", serif;
+  padding: 1rem 2.5rem;
+  border: 1px solid #000000;
+  color: #000000;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+#link-footer {
+  display: none;
+}
+
+.link-all:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.creations-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.creations-cards > .card {
+  width: 18rem;
+  height: 30rem;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.creations-cards > .card:hover {
+  picture {
+    opacity: 0.6;
+  }
+}
+
+.creations-cards > .card > picture,
+.creations-cards > .card > picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.8);
+  transition: 0.3s;
+}
+
+.creations-cards > .card > h5 {
+  width: 70%;
+  font-family: "Josefin Sans", serif;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 300;
+  position: absolute;
+  bottom: 1.5vw;
+  left: 1.5vw;
+}
+
+@media (max-width: 750px) {
+  .title-creations {
+    justify-content: center;
+  }
+
+  #link-title {
+    display: none;
+  }
+
+  #link-footer {
+    display: flex;
+    width: 16rem;
+    margin: 3rem auto;
+    justify-content: center;
+  }
+
+  .title-creations > h3 {
+    font-size: 2rem;
+  }
+
+  .creations-cards {
+    justify-content: center;
+  }
+
+  .creations-cards > .card {
+    width: 16rem;
+    height: 30rem;
+  }
+}
+
+/*  font-family: "Alata", serif; /*/
+/*  font-family: "Josefin Sans", serif; /*/ /*  font-family: "Alata", serif; /*/
